@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1 class="font-weight-bold text-center font-italic">Calculatrice</h1><br>
+    <table border="1" class="table table-dark">
+        <thead  class="thead-light">
+            <tr>
+                <td colspan="3" scope="col"><input type="text" class="rlt" id="result" /></td>
+                <td scope="col"><a href="calcul.html"><button class="btn btn-warning">C</button> </a> </td>
+            </tr>
+        </thead>
+        <tr>
+
+            <td><input type="button" class="btn btn-light" value="1" onclick="operation('1');" /> </td>
+            <td><input type="button" class="btn btn-light" value="2" onclick="operation('2');" /> </td>
+            <td><input type="button" class="btn btn-light" value="3" onclick="operation('3');" /> </td>
+            <td><input type="button" class="btn btn-light" value="/" onclick="operation('/');" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn btn-light" value="4" onclick="operation('4');" /> </td>
+            <td><input type="button" class="btn btn-light" value="5" onclick="operation('5');" /> </td>
+            <td><input type="button" class="btn btn-light" value="6" onclick="operation('6');" /> </td>
+            <td><input type="button" class="btn btn-light" value="-" onclick="operation('-');" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn btn-light" value="7" onclick="operation('7');" /> </td>
+            <td><input type="button" class="btn btn-light" value="8" onclick="operation('8');" /> </td>
+            <td><input type="button" class="btn btn-light" value="9" onclick="operation('9');" /> </td>
+            <td><input type="button" class="btn btn-light" value="+" onclick="operation('+');" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn btn-light" value="." onclick="operation('.');" /> </td>
+            <td><input type="button" class="btn btn-light" value="0" onclick="operation('0');" /> </td>
+
+            <td><input type="button" class="btn btn-success" value="=" onclick="resultat();" /> </td>
+            <td><input type="button" class="btn btn-light" value="*" onclick="operation('*');" /> </td>
+        </tr>
+    </table>
+    <script src="../js/ctrl.js"></script>
+</body>
+
+</html>
